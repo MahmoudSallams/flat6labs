@@ -1,0 +1,69 @@
+title = "Latest News"
+url = "/latest-news"
+layout = "inner"
+is_hidden = 0
+
+[newsPosts newsPosts2]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+postFeatured = 0
+postTranslated = 0
+postPage = "singleNews"
+categoryPage = "singleNews"
+==
+{% put headerextend %}
+    <div class="inner1-background">
+        <div class="inner-1-img">
+            <img src="{{'assets/images/header2.png'|theme }}" />
+        </div><!-- inner-1 img -->
+        <div class="container">
+            <div class="row">
+                <div class="inner2-background-h3 col-xs-12">
+                    <h3>{{"اخر الاخبار" | _}} </h3>
+                </div><!-- inner2-background-h3 -->
+            </div><!-- row-->
+        </div><!-- container -->
+    </div><!-- inner2-background-->
+    <div class="inner1-header-links">
+        <div class="links-contain">
+            <a href="#">{{"تابع كل ما يحدث واخر المستجدات " | _}}</a>
+        </div><!-- links-contain -->
+    </div><!-- inner1-header-links -->
+{% endput %}
+<div class='container'>
+    <div class="news-content-flex">
+        {% set posts = newsPosts2.posts %}
+        {% for post in posts %}
+            <div class="row-flex">
+                <div class="col-md-6-flex">
+                    <h3>{{ post.title}}</h3>
+                    <span> {{ post.published_at|date('Y-m-d') }}</span>
+                    <p>
+                        {% if post.introductory %}
+                            {{ post.introductory|raw }}
+                        {% elseif post.content %}
+                            {{ post.content|raw }}
+                        {% endif %}
+                    </p>
+                    <a href="{{postPage| page({"slug":post.slug})}}">
+                     {{"  إعرف المزيد " | _}} 
+                     <i class="fas {{'fa-chevron-left' | _}}"></i>
+                    </a>
+                </div>
+                <div class="col-md-6-flex">
+                    {% if post.image %}
+                        <img src="{{ post.image|media }}" class="img-responsive" height="200px">
+                    {% endif %}
+                </div>
+            </div>
+        {% else %}
+            {{ noPostsMessage }}
+        {% endfor %}
+        
+    </div>
+</div>
+<div class="container text-center" >
+{{ posts.render | raw }}
+</div>

@@ -1,0 +1,73 @@
+[viewBag]
+snippetCode = "header1"
+
+[staticMenu]
+code = "main-menu-en"
+==
+<div class="container">
+    <div class="header-nav-items">
+        <div class="header-nav-items-logo">
+            <img src="{{'assets/images/logo.png'|theme }}" />
+        </div>
+        <div class="header-nav-items-nav">
+            {% if staticMenu.menuItems %}
+                {% for item in staticMenu.menuItems %}
+                    <a href="{{item.url}}" class="{{item.isActive ? 'active':''}}" ><span>{{item.title | _}}</span></a>    
+                {% endfor %}
+            {% endif %}
+            {% if activeLocale  == 'ar' %}
+                <a href="#" data-request="onSwitchLocale" class='lang-btn' data-request-data="locale: 'en'">English</a>
+            {% else %}
+                <a href="#" data-request="onSwitchLocale" class="lang-btn" data-request-data="locale: 'ar'">عربى</a>
+            {% endif %}    
+        </div>
+        <div class="header-nav-items-icon">
+            <a href="#" ><img src="{{'assets/images/inner-e.png'|theme }}" /></a>
+        </div>
+        <div onclick="$('.header-nav-items-nav').slideToggle();" class="header-nav-items-button">
+            <a href="#" ><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+</div>
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="nav-inner col-xs-12">
+        
+            <div class="nav-contain-links col-xs-2">
+                <a href="#" ><img src="{{'assets/images/inner-e.png'|theme }}" /></a>
+            </div>
+            <div class="nav-contain-links col-xs-8">
+                {% if staticMenu.menuItems %}
+                    {% for item in staticMenu.menuItems %}
+                        <a href="{{item.url}}" ><span>{{item.title | _}}</span></a>    
+                    {% endfor %}
+                {% endif %}
+            
+                 <a href="#" ><span>{{"الداعمون" | _}}</span></a>
+                    <a href="#" ><span>{{"مراحل البرنامج" | _}}</span></a>
+                    <a href="#" ><span>{{"تقدم للمسرعة" | _}}</span></a>
+                    <a href="#" ><span>{{"أخر الاخبار"| _}}</span></a>
+               
+                
+                {{ form_open() }}
+                    <select name="locale" data-request="onSwitchLocale" class="form-control">
+                        {% for code, name in locales %}
+                            <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                {{ form_close() }}
+            
+                  {% if activeLocale  == 'ar' %}
+                    <a href="#" data-request="onSwitchLocale" class='lang-btn' data-request-data="locale: 'en'">English</a>
+                {% else %}
+                    <a href="#" data-request="onSwitchLocale" class="lang-btn" data-request-data="locale: 'ar'">عربى</a>
+                {% endif %}
+            </div>nav-contain
+            <div class="nav-logo col-xs-2">
+                <div class="inner-logo-contain">
+                    <img src="{{'assets/images/logo.png'|theme }}" />
+                </div>logo-contain
+            </div>nav-logo
+        </div>nav-inner
+    </div>row
+</div>container -->

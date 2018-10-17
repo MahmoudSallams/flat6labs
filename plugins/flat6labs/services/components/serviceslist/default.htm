@@ -1,0 +1,10 @@
+{% set services = __SELF__.services %}
+<ul>
+    {% for service in services %}
+        <li>
+                {{service.title}} {{service.avatar.path}}
+        </li>
+    {% else %}
+        
+    {% endfor %}
+</ul>

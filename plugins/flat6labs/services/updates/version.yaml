@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table flat6labs_services_'
+    - builder_table_create_flat6labs_services_.php
+1.0.3:
+    - 'Updated table flat6labs_services_'
+    - builder_table_update_flat6labs_services_services.php

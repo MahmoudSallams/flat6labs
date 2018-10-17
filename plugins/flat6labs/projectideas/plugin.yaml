@@ -1,0 +1,12 @@
+plugin:
+    name: 'flat6labs.projectideas::lang.plugin.name'
+    description: 'flat6labs.projectideas::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-project:
+        label: 'Project Ideas'
+        url: flat6labs/projectideas/projects
+        icon: icon-adjust
+        order: ''

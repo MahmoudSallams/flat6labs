@@ -1,0 +1,10 @@
+name: Services
+form: $/flat6labs/services/models/service/fields.yaml
+modelClass: Flat6labs\Services\Models\Service
+defaultRedirect: flat6labs/services/services
+create:
+    redirect: 'flat6labs/services/services/update/:id'
+    redirectClose: flat6labs/services/services
+update:
+    redirect: flat6labs/services/services
+    redirectClose: flat6labs/services/services

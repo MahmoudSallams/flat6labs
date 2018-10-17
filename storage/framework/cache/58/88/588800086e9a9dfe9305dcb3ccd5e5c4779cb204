@@ -1,0 +1,300 @@
+1539702732a:1:{s:22:"join-initiative-go.htm";a:9:{s:8:"fileName";s:22:"join-initiative-go.htm";s:7:"content";s:7949:"title = "Join the initiative GO"
+url = "/join-initiative-go"
+layout = "inner"
+is_hidden = 0
+==
+{% put headerextend %}
+    <div class="inner1-background">
+            <div class="inner-1-img">
+                <img src="{{'assets/images/header2.png'|theme }}" />
+            </div><!-- inner-1 img -->
+            <div class="container">
+                <div class="row">
+                    <div class="inner2-background-h3 col-xs-12">
+                        <h3> {{"انضم للمبادرة" | _}}
+                        </h3>
+                    </div><!-- inner2-background-h3 -->
+                </div><!-- row-->
+            </div><!-- container -->
+        </div><!-- inner2-background-->
+        <div class="inner1-header-links">
+            <div class="links-contain">
+                <a href="http://34.251.139.234/flat6labs/andm-llmbadrh" > {{"فّكر" | _}}</a>
+                <span></span>
+                <a href="http://34.251.139.234/flat6labs/andm-llmbadrh-tor"> {{"طّور" | _}}</a>
+                <span></span>
+                <a href="http://34.251.139.234/flat6labs/join-initiative-go" class='active'> {{"انطلق" | _}}</a>
+            </div><!-- links-contain -->
+        </div><!-- inner1-header-links -->
+{% endput %}
+
+<section class="col-xs-12 section-4">
+    <div class="container">
+        <div class="row">
+         <div class="col-xs-12 headline-box">
+            <img src = "{{'assets/images/rule-3.png' |theme}}" class="rule-2-support">
+            <span class = "headline headline-2">
+            &nbsp;	  {{"انطلق بشركتك في المسرعة" | _}} 
+            </span>
+         </div>
+            <div class="col-sm-6 col-xs-12 section-3-details">
+                <img src="{{'assets/images/Layer-7.png' |theme }}" class="img-responsive Layer-7-img">
+            </div>
+
+            <div class="col-sm-6 col-xs-12 section-3-details section-4-details">
+                <div class="col-xs-12 headline-box">
+                    <div class = "headline headline-all headline-all-2">
+                        <span>{{"منح التمويل " | _}}
+                            
+                        </span>
+                        <div class="hr-spec" align="right">
+                            <hr align="right">
+                        </div>
+
+                        <p><!-- /.container-fluid -->
+                         {{"منح التمويل description " | _}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->            
+    </div><!-- end container -->
+</section><!-- section end -->
+<section class="describe-section">
+        <div class="container discription">
+        <div class="row">
+            <div class="discription-wrap">
+                <div class="discribe-content d-content-1 col-sm-6">
+                    <div class="discribe-content-contain">
+                        <div class="discribe-content-header">
+                          <h4> {{"فعاليات تجمع وتواصل الشركات" | _}} </h4>
+                          <span class="divide"></span>
+                        </div>
+                        <p>
+{{"فعاليات تجمع وتواصل الشركات description" | _}}</p>
+                    </div><!-- discribe-content-contain -->
+                </div><!-- discribe-content -->
+                <div class="discribe-content d-content-2 col-sm-6">
+                    <div class="discribe-content-contain">
+                        <div class="discribe-content-header">
+                          <h4>{{"المعسكر التدريبي للشركات الناشئة" | _}}  </h4>
+                          <span class="divide"></span>
+                        </div>
+                        <p>{{"المعسكر التدريبي للشركات الناشئةdescription" | _}} </p>
+                    </div><!-- discribe-content-contain -->
+                </div><!-- discribe-content -->
+            </div><!-- discription-wrap -->
+        </div><!-- row-->
+      </div><!-- container -->   
+  </section>
+  <section class="think-share-inner1">
+        <div class="think-inner1-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="think01-content col-sm-6">
+                        <div class="think01-pragraph-1">
+                            <div class="pragraph-1-header">
+                                <h4>{{"الدعم القانوني" | _}}</h4>
+                                <span class="divide"></span>
+                                <p>
+                                {{" الدعم القانوني description "  | _}}
+                                </p>
+                            </div><!-- pragraph-1-header-->
+                        </div><!-- think01-pragraph-1 -->
+                        <div class="think01-pragraph-2">
+                            <div class="pragraph-2-header">
+                                <h4> {{"المشاركة في الفعاليات الدولية" | _}}</h4>
+                                <span class="divide"></span>
+                                <p>
+ {{" المشاركة في الفعاليات الدولية description" | _}}
+                                 </p>
+                            </div><!-- pragraph-1-header-->
+                        </div><!-- think01-pragraph-2 -->
+                    </div><!-- think1-content -->
+                    <div class="think01-img col-md-6 col-sm-6 col-lg-5">
+                        <div class="think01-img-background">
+                            <div class="img-contain">
+                                <img class="img-responsive" src="{{'assets/images/red-img2.png'|theme }}" />
+                            </div><!-- img-contain-->
+                            <div class="apper-div">
+                                <img class="img-responsive" src="{{'assets/images/smart_object2.png'|theme }}" />
+                            </div><!-- apper-div -->
+                        </div><!-- think01-img-background -->
+                    </div><!--think01-img -->
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- think-inner2-wrap -->
+    </section><!-- think-Share-inner2 -->
+  <section class="reports section3">
+      <div class="reports-wrap">
+          <div class="container">
+              <div class="row">
+                  <div class="report-content col-xs-12 col-sm-6">
+                      <div class="report-content-contain">
+                          <div class="report-content-header">
+                              <h4> {{"العروض المتنقلة الدولية " | _}} </h4>
+                              <span class="divide"></span>
+                          </div><!-- report-content-header -->
+                          <p> {{"العروض المتنقلة الدولية description " | _}} </p>
+                      </div><!-- report-content-contain -->
+                  </div><!-- report-content -->
+                   <div class="report-content report2 col-xs-12 col-sm-6">
+                      <div class="report-content-contain">
+                          <div class="report-content-header">
+                              <h4> {{"دعم رواد الأعمال من خارج القاهرة  " | _}} </h4>
+                              <span class="divide"></span>
+                          </div><!-- report-content-header -->
+                          <p>{{"دعم رواد الأعمال من خارج القاهرة description" | _}}</p>
+                      </div><!-- report-content-contain -->
+                  </div><!-- report-content -->
+              </div><!-- row -->
+          </div><!-- container -->
+      </div><!-- reports-wrap -->
+  </section><!-- reports -->";s:5:"mtime";i:1539251972;s:6:"markup";s:7854:"{% put headerextend %}
+    <div class="inner1-background">
+            <div class="inner-1-img">
+                <img src="{{'assets/images/header2.png'|theme }}" />
+            </div><!-- inner-1 img -->
+            <div class="container">
+                <div class="row">
+                    <div class="inner2-background-h3 col-xs-12">
+                        <h3> {{"انضم للمبادرة" | _}}
+                        </h3>
+                    </div><!-- inner2-background-h3 -->
+                </div><!-- row-->
+            </div><!-- container -->
+        </div><!-- inner2-background-->
+        <div class="inner1-header-links">
+            <div class="links-contain">
+                <a href="http://34.251.139.234/flat6labs/andm-llmbadrh" > {{"فّكر" | _}}</a>
+                <span></span>
+                <a href="http://34.251.139.234/flat6labs/andm-llmbadrh-tor"> {{"طّور" | _}}</a>
+                <span></span>
+                <a href="http://34.251.139.234/flat6labs/join-initiative-go" class='active'> {{"انطلق" | _}}</a>
+            </div><!-- links-contain -->
+        </div><!-- inner1-header-links -->
+{% endput %}
+
+<section class="col-xs-12 section-4">
+    <div class="container">
+        <div class="row">
+         <div class="col-xs-12 headline-box">
+            <img src = "{{'assets/images/rule-3.png' |theme}}" class="rule-2-support">
+            <span class = "headline headline-2">
+            &nbsp;	  {{"انطلق بشركتك في المسرعة" | _}} 
+            </span>
+         </div>
+            <div class="col-sm-6 col-xs-12 section-3-details">
+                <img src="{{'assets/images/Layer-7.png' |theme }}" class="img-responsive Layer-7-img">
+            </div>
+
+            <div class="col-sm-6 col-xs-12 section-3-details section-4-details">
+                <div class="col-xs-12 headline-box">
+                    <div class = "headline headline-all headline-all-2">
+                        <span>{{"منح التمويل " | _}}
+                            
+                        </span>
+                        <div class="hr-spec" align="right">
+                            <hr align="right">
+                        </div>
+
+                        <p><!-- /.container-fluid -->
+                         {{"منح التمويل description " | _}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->            
+    </div><!-- end container -->
+</section><!-- section end -->
+<section class="describe-section">
+        <div class="container discription">
+        <div class="row">
+            <div class="discription-wrap">
+                <div class="discribe-content d-content-1 col-sm-6">
+                    <div class="discribe-content-contain">
+                        <div class="discribe-content-header">
+                          <h4> {{"فعاليات تجمع وتواصل الشركات" | _}} </h4>
+                          <span class="divide"></span>
+                        </div>
+                        <p>
+{{"فعاليات تجمع وتواصل الشركات description" | _}}</p>
+                    </div><!-- discribe-content-contain -->
+                </div><!-- discribe-content -->
+                <div class="discribe-content d-content-2 col-sm-6">
+                    <div class="discribe-content-contain">
+                        <div class="discribe-content-header">
+                          <h4>{{"المعسكر التدريبي للشركات الناشئة" | _}}  </h4>
+                          <span class="divide"></span>
+                        </div>
+                        <p>{{"المعسكر التدريبي للشركات الناشئةdescription" | _}} </p>
+                    </div><!-- discribe-content-contain -->
+                </div><!-- discribe-content -->
+            </div><!-- discription-wrap -->
+        </div><!-- row-->
+      </div><!-- container -->   
+  </section>
+  <section class="think-share-inner1">
+        <div class="think-inner1-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="think01-content col-sm-6">
+                        <div class="think01-pragraph-1">
+                            <div class="pragraph-1-header">
+                                <h4>{{"الدعم القانوني" | _}}</h4>
+                                <span class="divide"></span>
+                                <p>
+                                {{" الدعم القانوني description "  | _}}
+                                </p>
+                            </div><!-- pragraph-1-header-->
+                        </div><!-- think01-pragraph-1 -->
+                        <div class="think01-pragraph-2">
+                            <div class="pragraph-2-header">
+                                <h4> {{"المشاركة في الفعاليات الدولية" | _}}</h4>
+                                <span class="divide"></span>
+                                <p>
+ {{" المشاركة في الفعاليات الدولية description" | _}}
+                                 </p>
+                            </div><!-- pragraph-1-header-->
+                        </div><!-- think01-pragraph-2 -->
+                    </div><!-- think1-content -->
+                    <div class="think01-img col-md-6 col-sm-6 col-lg-5">
+                        <div class="think01-img-background">
+                            <div class="img-contain">
+                                <img class="img-responsive" src="{{'assets/images/red-img2.png'|theme }}" />
+                            </div><!-- img-contain-->
+                            <div class="apper-div">
+                                <img class="img-responsive" src="{{'assets/images/smart_object2.png'|theme }}" />
+                            </div><!-- apper-div -->
+                        </div><!-- think01-img-background -->
+                    </div><!--think01-img -->
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- think-inner2-wrap -->
+    </section><!-- think-Share-inner2 -->
+  <section class="reports section3">
+      <div class="reports-wrap">
+          <div class="container">
+              <div class="row">
+                  <div class="report-content col-xs-12 col-sm-6">
+                      <div class="report-content-contain">
+                          <div class="report-content-header">
+                              <h4> {{"العروض المتنقلة الدولية " | _}} </h4>
+                              <span class="divide"></span>
+                          </div><!-- report-content-header -->
+                          <p> {{"العروض المتنقلة الدولية description " | _}} </p>
+                      </div><!-- report-content-contain -->
+                  </div><!-- report-content -->
+                   <div class="report-content report2 col-xs-12 col-sm-6">
+                      <div class="report-content-contain">
+                          <div class="report-content-header">
+                              <h4> {{"دعم رواد الأعمال من خارج القاهرة  " | _}} </h4>
+                              <span class="divide"></span>
+                          </div><!-- report-content-header -->
+                          <p>{{"دعم رواد الأعمال من خارج القاهرة description" | _}}</p>
+                      </div><!-- report-content-contain -->
+                  </div><!-- report-content -->
+              </div><!-- row -->
+          </div><!-- container -->
+      </div><!-- reports-wrap -->
+  </section><!-- reports -->";s:4:"code";N;s:5:"title";s:22:"Join the initiative GO";s:3:"url";s:19:"/join-initiative-go";s:6:"layout";s:5:"inner";s:9:"is_hidden";s:1:"0";}}

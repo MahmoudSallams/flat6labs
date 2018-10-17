@@ -1,0 +1,90 @@
+==
+<div id="top-header">
+    <div class="container">
+        <div class="row top-header-div">
+            <div class="col-md-3">WELCOME TO OUR SHOP!</div>
+            <div class="col-md-6"></div>
+            <div class="col-md-3">
+                {% if user %}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{ user.name }}
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/user/order">{{ 'ideas.shop::lang.component.order_manager' | trans }}</a>
+                        </li>
+                        <li>
+                            <a href="/user/address">{{ 'ideas.shop::lang.component.address_manager' | trans }}</a>
+                        </li>
+                        <li>
+                            <a data-request="onLogout" data-request-data="redirect: '/'">LOG OUT</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                {% else %}
+                <a href="/login" class="top-header-a">SIGN IN</a>
+                OR
+                <a href="/register" class="top-header-a">REGISTER</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row top-header-div">
+        <div id="logo" class="col-md-3"><img src="" /></div>
+        <div id="form-search" class="col-md-6">
+            <form action="/search-result" method="get" id="form-search-form">
+                <div class="form-group" id="search-form-top">
+                    <input type="text" id="search-input-top" name="key"
+                           class="form-control" placeholder="search"/>
+                    <i class="fa fa-search" aria-hidden="true" id="search-top-icon"></i>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3" id="support-phone-div">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span class="support-phone">123456789</span>
+        </div>
+    </div>
+</div>
+<div class="yamm navbar" id="navbar">
+    <div class="container-fluid container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="{{'product' | page({slug:"uncategory"})}}">Category</a></li>
+                <li><a href="{{'cart'| page}}">Cart</a></li>
+                <li><a href="/checkout">Checkout</a></li>
+                <li><a href="/blog-list">Blog list</a></li>
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1-->
+                        <!--<span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li class="col-md-4"><img src="" width="100" height="100"/></li>-->
+                        <!--<li class="col-md-4"><img src="" width="100" height="100"/></li>-->
+                        <!--<li class="col-md-4"><img src="" width="100" height="100"/></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right" id="cart-not-collapse">
+            <li class="dropdown" id="cart-dropdown-li">
+                <i class="fa fa-shopping-bag" aria-hidden="true" id="cart-top"></i>
+                <span class="cart-count" id="cart-count">0</span>
+                <div class="dropdown-menu" id="cart-dropdown">
+                      {% component 'Cart::dropdown' %}
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

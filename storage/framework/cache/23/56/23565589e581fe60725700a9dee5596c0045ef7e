@@ -1,0 +1,107 @@
+1539702732a:1:{s:10:"Footer.htm";a:7:{s:8:"fileName";s:10:"Footer.htm";s:7:"content";s:2701:"[viewBag]
+snippetCode = "footer"
+snippetName = "footer"
+
+[newsSubscribe]
+==
+<div class="news-subscription">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <h2 class="h2">   {{"إشترك فى النشرة البريدية  " | _}} 
+                </h2>
+            </div>
+            <div class="col-md-10 col-md-offset-2">
+                <form data-request="onSubscription" data-request-success="alert('{{ text_messages }}')">
+                    <input type="hidden" name="name" value="User">
+                    {% if category_count == 0 %}
+                        <input type="hidden" name="category[]" value="0">
+                        
+                    {% else %}
+                        <label>{{ text_category }}</label>
+                        {% for category in category_list %}
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="category[]" value="{{ category.id }}"> {{ category.name }}
+                                </label>
+                            </div>
+                            {% endfor %}
+                    {% endif %}
+                    <div class="subscribe-box">
+                        <input name="email" type="email" class="form-control" id="subscribersEmail"  placeholder=" {{"ادخل بريدك الالكتروني " | _}} " required>
+                        <span class="">
+                            <button class="btn btn-default" type="submit"> {{"اشترك الان  " | _}} <i class="fas fa-angle-left"></i></button>
+                       </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-4 col-md-5 text-right">  
+                    <a href="https://www.facebook.com/startegyptcom" class="facebook" target="_blank"> <span><i class="fab fa-facebook-f"></i> facebook </span></a>
+                </div>
+                <div class="col-xs-4 col-md-2">  
+                  <a href="https://twitter.com/startegyptcom" class="twitter" target="_blank"><span> <i class="fab fa-twitter"></i> twitter  </span></a>
+                </div>
+                <div class="col-xs-4 col-md-4 text-left">  
+                    <a href="https://www.instagram.com/startegypt/" class="instagram" target="_blank"><span> <i class="fab fa-instagram"></i> instagram    </span></a>
+                </div>    
+
+            </div>
+        </div>
+</footer>";s:5:"mtime";i:1539526375;s:6:"markup";s:2625:"<div class="news-subscription">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <h2 class="h2">   {{"إشترك فى النشرة البريدية  " | _}} 
+                </h2>
+            </div>
+            <div class="col-md-10 col-md-offset-2">
+                <form data-request="onSubscription" data-request-success="alert('{{ text_messages }}')">
+                    <input type="hidden" name="name" value="User">
+                    {% if category_count == 0 %}
+                        <input type="hidden" name="category[]" value="0">
+                        
+                    {% else %}
+                        <label>{{ text_category }}</label>
+                        {% for category in category_list %}
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="category[]" value="{{ category.id }}"> {{ category.name }}
+                                </label>
+                            </div>
+                            {% endfor %}
+                    {% endif %}
+                    <div class="subscribe-box">
+                        <input name="email" type="email" class="form-control" id="subscribersEmail"  placeholder=" {{"ادخل بريدك الالكتروني " | _}} " required>
+                        <span class="">
+                            <button class="btn btn-default" type="submit"> {{"اشترك الان  " | _}} <i class="fas fa-angle-left"></i></button>
+                       </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-4 col-md-5 text-right">  
+                    <a href="https://www.facebook.com/startegyptcom" class="facebook" target="_blank"> <span><i class="fab fa-facebook-f"></i> facebook </span></a>
+                </div>
+                <div class="col-xs-4 col-md-2">  
+                  <a href="https://twitter.com/startegyptcom" class="twitter" target="_blank"><span> <i class="fab fa-twitter"></i> twitter  </span></a>
+                </div>
+                <div class="col-xs-4 col-md-4 text-left">  
+                    <a href="https://www.instagram.com/startegypt/" class="instagram" target="_blank"><span> <i class="fab fa-instagram"></i> instagram    </span></a>
+                </div>    
+
+            </div>
+        </div>
+</footer>";s:4:"code";N;s:7:"viewBag";a:2:{s:11:"snippetCode";s:6:"footer";s:11:"snippetName";s:6:"footer";}s:13:"newsSubscribe";a:0:{}}}

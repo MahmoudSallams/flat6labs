@@ -1,0 +1,26 @@
+title = "singleNews"
+url = "/singlenews/:slug"
+layout = "inner"
+is_hidden = 0
+
+[newsPost]
+slug = "{{ :slug }}"
+==
+{% set post = newsPost.post %}
+<div class="container">
+    <div class="post">
+        <div class="post-content">
+               <div class="col-md-12-flex">
+                    {% if post.image %}
+                        <img src="{{ post.image|media }}" class="img-responsive">
+                    {% endif %}
+                </div>
+            <h2 class="post-title">{{ post.title }}</h2>
+               <span> {{ post.published_at|date('Y-m-d') }}</span>
+            {% if post.introductory %}<div class="post-introductory">{{ post.introductory|raw }}</div>{% endif %}
+            {% if post.content %}<div class="post-content">{{ post.content|raw }}</div>{% endif %}
+    
+
+        </div>
+    </div>
+</div

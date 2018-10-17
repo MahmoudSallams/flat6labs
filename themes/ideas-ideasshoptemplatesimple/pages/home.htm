@@ -1,0 +1,59 @@
+title = "Homepage"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[Ideas\Shop\Components\Theme Theme]
+==
+{% component 'Theme::gallery' %}
+<div class="container" style="margin-top:50px" id="content">
+    {% component 'Theme::welcome' %}
+    {% component 'Theme::featured' %}
+
+    {% if  category is not empty %}
+        {% for c in category %}
+            {% partial 'site/category' id=c.id maxItems=c.num_display  %}
+        {% endfor %}
+    {% endif %}
+</div>
+{% component 'Theme::testimonials' %}
+
+<div class="container">
+    {% component 'Theme::arrivals' %}
+    {% component 'Theme::ship_slide' %}
+
+    <div class="row" id="blog-header">
+        <h2 class="text-center">Blog</h2>
+        <div class="text-center">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+        </div>
+    </div>
+    <div class="row" id="blog-list">
+        {% set k = 2 %}
+        {% for i in 0..k %}
+        <div class="col-md-4">
+            <div class="blog-image"><img src="/storage/app/media/theme/post_1.jpg" /> </div>
+            <div class="blog-title">eiusmod tempor incididunt ut labore et</div>
+            <div class="blog-author"><span class="author-by">By</span>admin</div>
+            <div class="blog-short-intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </div>
+            <div class="blog-read-more">
+                <a href="#" class="pull-left">Read more</a>
+                <div class="pull-right">0 comments</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="hr-class"></div>
+    <div class="row text-center">
+        <form>
+            <div class="form-group" id="newsletter-div">
+                <input type="text" id="newsletter" class="form-control"/>
+                <input type="submit" class="btn btn-primary" value="subscribe"/>
+            </div>
+        </form>
+    </div>
+</div>

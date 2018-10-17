@@ -1,0 +1,12 @@
+list: $/flat6labs/team/models/member/columns.yaml
+modelClass: Flat6labs\Team\Models\Member
+title: Members
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'flat6labs/team/members/update/:id'

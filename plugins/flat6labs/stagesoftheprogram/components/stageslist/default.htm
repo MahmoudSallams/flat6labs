@@ -1,0 +1,10 @@
+{% set stages = __SELF__.stages %}
+<ul>
+    {% for stage in stages %}
+        <li>
+                {{stage.description}}
+        </li>
+    {% else %}
+        
+    {% endfor %}
+</ul>

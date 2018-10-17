@@ -1,0 +1,10 @@
+name: Projects
+form: $/flat6labs/projectideas/models/project/fields.yaml
+modelClass: Flat6labs\ProjectIdeas\Models\Project
+defaultRedirect: flat6labs/projectideas/projects
+create:
+    redirect: 'flat6labs/projectideas/projects/update/:id'
+    redirectClose: flat6labs/projectideas/projects
+update:
+    redirect: flat6labs/projectideas/projects
+    redirectClose: flat6labs/projectideas/projects

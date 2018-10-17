@@ -1,0 +1,10 @@
+name: Members
+form: $/flat6labs/team/models/member/fields.yaml
+modelClass: Flat6labs\Team\Models\Member
+defaultRedirect: flat6labs/team/members
+create:
+    redirect: 'flat6labs/team/members/update/:id'
+    redirectClose: flat6labs/team/members
+update:
+    redirect: flat6labs/team/members
+    redirectClose: flat6labs/team/members

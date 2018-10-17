@@ -1,0 +1,13 @@
+{% set projects = __SELF__.projects %}
+<ul>
+    {% for project in projects %}
+        <li>
+                <a href="{{"pr"| page({'id':project.id})}}">{{project.title}}</a> <br>
+{{ str_limit(project.description, 100,'...Read More') }}
+
+                <br><img src="{{project.avatar.path}}"> 
+        </li>
+    {% else %}
+        
+    {% endfor %}
+</ul>

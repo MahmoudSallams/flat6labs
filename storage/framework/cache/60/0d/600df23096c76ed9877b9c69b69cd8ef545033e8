@@ -1,0 +1,95 @@
+1539702732a:1:{s:8:"main.htm";a:6:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:2256:"[newsSubscribe]
+==
+<!DOCTYPE html>
+<html {% if activeLocale=="ar" %} dir="rtl" {% endif %}   lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="{{ seo_keyword }}">
+    <meta name="keywords" content="{{ seo_description }}">
+    <meta name="author" content="Flat6labs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Flat6labs">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Masr-Tabda-Home-Page</title>
+          <link href="{{ 'assets/images/logo.png'|theme }}" rel="icon">
+    <!-- Bootstrap -->
+    <link href="{{ 'assets/styles/bootstrap.min.css'|theme }}" rel="stylesheet">
+    <!-- custom style -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="{{ 'assets/styles/style.css'|theme }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        {% if activeLocale=="en" %}
+            <link href="{{'assets/styles/ltr.css' | theme}}" rel="stylesheet" >
+        {% endif %}
+        <link rel="stylesheet" type="text/css" href={{'assets/styles/slick.css' | theme}} />
+        <link rel="stylesheet" type="text/css" href={{'assets/styles/slick-theme.css' | theme}} />
+        <script type="text/javascript" src={{'assets/styles/slick.min.js' | theme}}></script>
+        <script async src="{{ 'assets/scripts/bootstrap.min.js' |theme }}"></script>
+        <script async src="{{ 'assets/scripts/script.js' |theme }}"></script>
+
+    {% styles %}
+
+
+  </head>
+
+<body>
+{% partial "header" %}
+{%  page %}
+{% partial "Footer" %}
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>";s:5:"mtime";i:1539699434;s:6:"markup";s:2237:"<!DOCTYPE html>
+<html {% if activeLocale=="ar" %} dir="rtl" {% endif %}   lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="{{ seo_keyword }}">
+    <meta name="keywords" content="{{ seo_description }}">
+    <meta name="author" content="Flat6labs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Flat6labs">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Masr-Tabda-Home-Page</title>
+          <link href="{{ 'assets/images/logo.png'|theme }}" rel="icon">
+    <!-- Bootstrap -->
+    <link href="{{ 'assets/styles/bootstrap.min.css'|theme }}" rel="stylesheet">
+    <!-- custom style -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="{{ 'assets/styles/style.css'|theme }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        {% if activeLocale=="en" %}
+            <link href="{{'assets/styles/ltr.css' | theme}}" rel="stylesheet" >
+        {% endif %}
+        <link rel="stylesheet" type="text/css" href={{'assets/styles/slick.css' | theme}} />
+        <link rel="stylesheet" type="text/css" href={{'assets/styles/slick-theme.css' | theme}} />
+        <script type="text/javascript" src={{'assets/styles/slick.min.js' | theme}}></script>
+        <script async src="{{ 'assets/scripts/bootstrap.min.js' |theme }}"></script>
+        <script async src="{{ 'assets/scripts/script.js' |theme }}"></script>
+
+    {% styles %}
+
+
+  </head>
+
+<body>
+{% partial "header" %}
+{%  page %}
+{% partial "Footer" %}
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>";s:4:"code";N;s:13:"newsSubscribe";a:0:{}}}

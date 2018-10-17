@@ -1,0 +1,26 @@
+title = "ideas"
+url = "/pr/:id"
+layout = "inner"
+is_hidden = 0
+
+[viewBag]
+
+[ProjectItem]
+==
+{% set project = ProjectItem.project %}
+
+<div class="container">
+        <div class="post-content">
+               <div class="col-md-12-flex">
+                  <h1>{{project.title}}</h1>
+                  <br>
+                  <div  class="project-list-item-box-red" style=" border-bottom: 1px solid #b40017;"></div>
+                    <br>
+                  <p>{{project.description | raw}}</p>
+               </div>
+        </div>
+</div>
+<br>
+<br>
+<br>
+<br><br>

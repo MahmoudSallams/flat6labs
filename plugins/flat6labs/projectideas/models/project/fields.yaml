@@ -1,0 +1,19 @@
+fields:
+    title:
+        label: 'Project Title'
+        span: auto
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: auto
+        type: richeditor
+    avatar:
+        label: 'File upload'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

@@ -1,0 +1,4 @@
+title: Services
+modelClass: Flat6labs\Services\Models\Service
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,88 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+cssClass: row
+
+fields:
+
+    title:
+        label: indikator.news::lang.form.title
+        required: true
+        span: storm
+        cssClass: col-sm-12 col-lg-6
+
+    slug:
+        label: indikator.news::lang.form.slug
+        required: true
+        preset: title
+        span: storm
+        cssClass: col-sm-12 col-lg-6
+
+    category:
+        label: indikator.news::lang.form.category
+        type: relation
+        span: storm
+        cssClass: col-sm-12 col-lg-6
+
+    published_at:
+        label: indikator.news::lang.form.published_at
+        type: datepicker
+        mode: datetime
+        span: storm
+        cssClass: col-sm-6 col-lg-3
+
+    last_send_at:
+        label: indikator.news::lang.form.last_send_at
+        type: datepicker
+        readOnly: true
+        mode: datetime
+        disabled: disabeld
+        span: storm
+        cssClass: col-sm-6 col-lg-3
+
+tabs:
+    fields:
+
+        introductory:
+            tab: indikator.news::lang.form.introductory
+            type: richeditor
+            size: large
+
+        content:
+            tab: indikator.news::lang.form.content
+            type: richeditor
+            size: giant
+
+secondaryTabs:
+    fields:
+
+        postinfo:
+            type: postinfo
+            context: update
+
+        image:
+            label: indikator.news::lang.form.image
+            type: mediafinder
+            mode: image
+
+        status:
+            label: indikator.news::lang.form.status
+            required: true
+            type: radio
+            options:
+                1: indikator.news::lang.form.status_published
+                2: indikator.news::lang.form.status_hide
+                3: indikator.news::lang.form.status_draft
+            default: 3
+            span: auto
+
+        featured:
+            label: indikator.news::lang.form.featured
+            required: true
+            type: radio
+            options:
+                1: indikator.news::lang.form.yes
+                2: indikator.news::lang.form.no
+            default: 2
+            span: auto

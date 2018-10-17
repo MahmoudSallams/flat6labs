@@ -1,0 +1,42 @@
+1539702732a:1:{s:6:"pr.htm";a:11:{s:8:"fileName";s:6:"pr.htm";s:7:"content";s:575:"title = "ideas"
+url = "/pr/:id"
+layout = "inner"
+is_hidden = 0
+
+[viewBag]
+
+[ProjectItem]
+==
+{% set project = ProjectItem.project %}
+
+<div class="container">
+        <div class="post-content">
+               <div class="col-md-12-flex">
+                  <h1>{{project.title}}</h1>
+                  <br>
+                  <div  class="project-list-item-box-red" style=" border-bottom: 1px solid #b40017;"></div>
+                    <br>
+                  <p>{{project.description | raw}}</p>
+               </div>
+        </div>
+</div>
+<br>
+<br>
+<br>
+<br><br>";s:5:"mtime";i:1539699698;s:6:"markup";s:483:"{% set project = ProjectItem.project %}
+
+<div class="container">
+        <div class="post-content">
+               <div class="col-md-12-flex">
+                  <h1>{{project.title}}</h1>
+                  <br>
+                  <div  class="project-list-item-box-red" style=" border-bottom: 1px solid #b40017;"></div>
+                    <br>
+                  <p>{{project.description | raw}}</p>
+               </div>
+        </div>
+</div>
+<br>
+<br>
+<br>
+<br><br>";s:4:"code";N;s:5:"title";s:5:"ideas";s:3:"url";s:7:"/pr/:id";s:6:"layout";s:5:"inner";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:0:{}s:11:"ProjectItem";a:0:{}}}

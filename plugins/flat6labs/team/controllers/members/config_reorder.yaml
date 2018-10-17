@@ -1,0 +1,4 @@
+title: Members
+modelClass: Flat6labs\Team\Models\Member
+toolbar:
+    buttons: reorder_toolbar

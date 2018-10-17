@@ -1,0 +1,10 @@
+{% set members = __SELF__.members %}
+<ul>
+    {% for member in members %}
+        <li>+
+                {{member.name}} {{member.avatar.path}}
+        </li>
+    {% else %}
+        
+    {% endfor %}
+</ul>

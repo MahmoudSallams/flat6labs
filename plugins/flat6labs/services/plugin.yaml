@@ -1,0 +1,11 @@
+plugin:
+    name: 'flat6labs.services::lang.plugin.name'
+    description: 'flat6labs.services::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-services:
+        label: Services
+        url: flat6labs/services/services
+        icon: icon-life-ring

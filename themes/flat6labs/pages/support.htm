@@ -1,0 +1,167 @@
+title = "Support"
+url = "/support"
+layout = "inner"
+is_hidden = 0
+
+[contactForm]
+injectBootstrapAssets = 0
+==
+{% put headerextend %}
+    <div class="inner1-background">
+            <div class="inner-1-img">
+                <img src="{{'assets/images/header2.png'|theme }}" />
+            </div><!-- inner-1 img -->
+            <div class="container">
+                <div class="row">
+                    <div class="inner2-background-h3 col-xs-12">
+                        <h3>{{"الدعم" | _}} </h3>
+                    </div><!-- inner2-background-h3 -->
+                </div><!-- row-->
+            </div><!-- container -->
+        </div><!-- inner2-background-->
+        <div class="inner1-header-links">
+            <div class="links-contain">
+                <a href="#">{{"تواصل معنا " | _}}</a>
+            </div><!-- links-contain -->
+        </div><!-- inner1-header-links -->
+{% endput %}
+
+    <section class="need-help">
+        <div class="need-help-wraper">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-12 need-help-header">
+                  <div class="need-content-header">    
+                    <h4>{{"احتاج إلى دعم! مصر تبدأ" | _}}</h4>
+                    <span class="divide"></span>
+                  </div><!--need-content-header -->
+                  <p>{{"احتاج إلى دعم! مصر تبدأ description" | _}} </div><!-- need-help-header -->
+            </div><!-- row -->
+         </div><!-- container -->
+        </div><!-- need-help-wraper -->
+    </section><!-- need-help-->
+    <section class="basic-info">
+        <div class="container">
+            <div class="row">
+                <div class="basic-info-header col-xs-12">
+                    <h4>{{"المعلومات الأساسية" | _}} </h4>
+                </div><!-- basic-info-header -->
+            </div><!-- row -->
+        </div><!-- container -->
+        <div class="separator"><span></span></div>
+        <div class="inputs-wrap">
+        <form class="ContactUsForm" role="form"
+            data-request="{{ contactForm }}::onMailSent"
+              data-request-update="'{{ contactForm }}::confirm': '.confirm-container'">
+
+            <div class="container">
+                <div class="row">
+                    <div class="describe-project col-sm-6">
+                        <div class="descpeoject-contain form-group">
+                            <label for="describe_project-T">{{"*  وصف مختصر للمشروع " | _}} </label>
+                            <span class="divide"></span>
+                            <textarea class="form-control"  name="projectdescription" id="describe_project-T" required></textarea>
+                        </div><!-- descpeoject-contain -->
+                    </div><!-- descripe-project -->
+                    <div class="describe-project col-sm-6">
+                        <div class="descpeoject-contain inputs-info-1 form-group">
+                            <label for="describe_project-i">{{"*    أسم المشروع" | _}} </label>
+                            <span class="divide"></span>
+                            <input class="form-control" name="projectname" id="describe_project-i" required>
+                        </div><!-- descpeoject-contain -->
+                        <div class="descpeoject-contain inputs-info-2 form-group">
+                            <label for="describe_project-i2">{{"*     موقع المشروع" | _}} </label>
+                            <span class="divide"></span>
+							<input class="form-control" name="location" id="describe_project-i2" required>
+                        </div><!-- descpeoject-contain -->
+                        <div class="descpeoject-contain inputs-info-3 form-group">
+                            <label for="describe_project-i3">{{"*     موقع إلكترونى " | _}}</label>
+                            <span class="divide"></span>
+                            <input class="form-control" name="website" id="describe_project-i3" required>
+                        </div><!-- descpeoject-contain -->
+                    </div><!-- descripe-project -->
+                    <div class="separator-contain col-xs-12"><div class="centered-separator"></div></div>
+                </div><!-- row -->
+            </div><!-- container -->
+            
+            <div class="support-needed-wrpaer">
+                <div class="container">
+                    <div class="row">
+                        <div class="support-sort col-sm-6">
+                            <div class="support-sort-contain form-group">
+                               <label for="support_project-T"> {{" *  أخبرنا المزيد عن الدعم الذي تحتاجه" | _}}</label>
+                               <span class="divide"></span>
+                               <textarea class="form-control" name="support" id="suppor_project-T" required></textarea>
+                            </div><!-- support-sort-contain -->
+                        </div><!-- support-sort -->
+						 <div class="support-need col-sm-6">
+                        <div class="support-sort-contain inputs-support-1 form-group">
+                            <label for="support_project-i">{{"*    نوع الدعم الذي تحتاجه " | _}} </label>
+                            <span class="divide"></span>
+                            <input class="form-control" name="hear" id="suport_project-i" required>
+                        </div><!-- descpeoject-contain -->
+                        <div class="descpeoject-contain inputs-support2 form-group">
+                            <label for="describe_project-i2">{{"*  كيف سمعت عن مصر تبدأ" | _}} </label>
+                            <span class="divide"></span>
+							<input class="form-control"  name="body" id="support_project-i2" required>
+                        </div><!-- descpeoject-contain -->
+                    </div><!-- descripe-project -->
+						<div class="separator-contain col-xs-12"><div class="centered-separator"></div></div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- support-needed-wrpaer -->
+        </div><!-- inputs-wrap -->
+    </section><!-- basic-info -->
+	<section class="connect-info">
+		<div class="connect-info-wraper">
+			<div class="container">
+				<div class="row">
+					<div class="connect-info-header col-xs-12">
+                      <h4> {{"معلومات التواصل" | _}}</h4>
+                    </div><!-- basic-info-header -->
+				</div><!-- row -->
+			</div><!-- container -->
+			<div class="separator"><span></span></div>
+			<div class="container connect-container">
+				<div class="row">
+				    <div class="connect-email name-info col-sm-6 col-md-push-6">
+						<div class="connect-email-contain inputs-connect form-group">
+							<div class="descpeoject-contain inputs-connect form-group">
+    							<label for="connect_project-i2">{{"*  الاسم"|_}} </label>
+                                <span class="divide"></span>	 
+    							<input class="form-control" name="name" id="connect_project-i3"  required>
+                            </div><!-- descpeoject-contain -->
+						</div><!-- connect-email-contain --->
+					</div><!-- connect-email -->
+					<div class="connect-email col-sm-6 col-md-pull-6">
+						<div class="connect-email-contain inputs-connect form-group">
+							 <div class="descpeoject-contain inputs-connect form-group">
+                                <label for="connect_project-i">{{"*      البريد الالكترونى" | _}} </label>
+                                <span class="divide"></span>
+    							<input class="form-control" name="email" id="connect_project-i" required>
+                            </div><!-- descpeoject-contain -->
+						</div><!-- connect-email-contain --->
+					</div><!-- connect-email -->
+					<div class="connect-email name-info col-sm-6 col-md-push-6">
+						<div class="connect-email-contain inputs-connect form-group">
+						    <div class="descpeoject-contain inputs-connect form-group">
+        						<label for="connect_project-i5">{{"*  رقم الهاتف  " | _}}</label>
+                                <span class="divide"></span>	 
+        						<input class="form-control" name="phone" id="connect_project-i5" required>
+        					</div>
+                        </div><!-- descpeoject-contain -->
+                    </div>
+					<div class="connect-email col-sm-6 col-md-pull-6">
+						<div class="connect-email-contain inputs-connect form-group">
+                             <button class="btn btn-default connect-btn" type="submit">{{"إرسال" | _}}</button>
+                         </div><!-- descpeoject-contain -->
+                         <div class="confirm-container">
+                        <!--This will contain the confirmation when the email is successfully sent-->
+                        </div>
+					</div><!-- connect-email-contain --->
+				</div><!-- row -->
+			</div><!-- container -->
+			</form>
+			<div class="separator-contain" id="sep-connect"><div class="centered-separator"></div></div>
+		</div><!-- connect-info-wraper -->
+	</section><!-- connect-info -->

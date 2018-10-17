@@ -1,0 +1,25 @@
+1539702732a:1:{s:9:"test2.htm";a:9:{s:8:"fileName";s:9:"test2.htm";s:7:"content";s:254:"title = "test2"
+url = "/test2"
+is_hidden = 0
+
+[StagesList]
+==
+{% set stages = StagesList.stages %}
+<ul>
+    {% for stage in stages %}
+        <li>
+                {{stage.description}}
+        </li>
+    {% else %}
+        
+    {% endfor %}
+</ul>";s:5:"mtime";i:1539080608;s:6:"markup";s:192:"{% set stages = StagesList.stages %}
+<ul>
+    {% for stage in stages %}
+        <li>
+                {{stage.description}}
+        </li>
+    {% else %}
+        
+    {% endfor %}
+</ul>";s:4:"code";N;s:5:"title";s:5:"test2";s:3:"url";s:6:"/test2";s:9:"is_hidden";s:1:"0";s:10:"StagesList";a:0:{}}}

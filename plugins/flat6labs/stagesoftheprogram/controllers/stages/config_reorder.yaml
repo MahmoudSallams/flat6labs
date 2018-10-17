@@ -1,0 +1,4 @@
+title: Stages
+modelClass: Flat6labs\Stagesoftheprogram\Models\Stage
+toolbar:
+    buttons: reorder_toolbar

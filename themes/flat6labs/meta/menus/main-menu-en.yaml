@@ -1,0 +1,81 @@
+name: 'Main Menu'
+items:
+    -
+        title: home
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: home
+        reference: home
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Supporters
+        type: url
+        url: 'http://34.251.139.234/flat6labs/ar#supporter'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Join the initiative'
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: Join-the-initiative
+        reference: andm-llmbadrh
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Stages of the program'
+        type: url
+        url: 'http://34.251.139.234/flat6labs/#stagesoftheprogram'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Apply to program'
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: apply-program
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Advance for speed'
+        type: url
+        url: 'https://www.flat6labs.com/?lang=ar'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '1'
+    -
+        title: 'Latest News'
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: latest-news
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

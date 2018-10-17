@@ -1,0 +1,8 @@
+1539702732a:1:{s:8:"test.htm";a:7:{s:8:"fileName";s:8:"test.htm";s:7:"content";s:121:"[viewBag]
+title = "test"
+url = "/test"
+is_hidden = 0
+navigation_hidden = 0
+localeUrl[ar] = "/اختبار"
+==
+<p>test</p>";s:5:"mtime";i:1538481371;s:6:"markup";s:11:"<p>test</p>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:4:"test";s:3:"url";s:5:"/test";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:9:"localeUrl";a:1:{s:2:"ar";s:13:"/اختبار";}}s:12:"parsedMarkup";s:11:"<p>test</p>";}}

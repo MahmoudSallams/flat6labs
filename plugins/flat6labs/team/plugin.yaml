@@ -1,0 +1,12 @@
+plugin:
+    name: 'flat6labs.team::lang.plugin.name'
+    description: 'flat6labs.team::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-member:
+        label: Memebrs
+        url: flat6labs/team/members
+        icon: icon-adn
+        order: '2'

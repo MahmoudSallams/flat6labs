@@ -1,0 +1,161 @@
+body {
+	direction: ltr;
+}
+.think01-pragraph-1 .pragraph-1-header h4, .think01-pragraph-2 .pragraph-2-header h4, .section2-wrap .egypt-contnent .egypt-contnent-header h4, .describe-section .discribe-content-contain h4, .section3 .report-content-header h4, .need-help-wraper .need-help-header h4, .basic-info .basic-info-header h4, .connect-info .connect-info-header h4 {
+    text-align: left;
+} 
+
+.think-share-inner1 .think-inner1-wrap .think01-content {
+    text-align: left;
+}
+.text-right {
+    text-align: left;
+}
+
+.news-subscription .form-control {
+    box-shadow: none;
+    text-align: left;
+}
+
+.fa-angle-left:before{
+	content: "\f105";
+}
+
+.fa-angle-right:before{
+	content: "\f104";
+}
+
+.arrow-box {
+	direction: rtl;
+}
+@media (min-width: 768px){
+	.col-sm-6 {
+	    width: 50%;
+	}
+}
+
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    float: right;
+}
+
+.nav-inner .nav-contain-links a{
+	float:left;
+}
+
+.headline-box {
+    text-align: left;
+}
+
+.rule-2-support {
+     float: left;
+}
+hr {
+
+	float: left;
+}
+.develope-project {
+	-webkit-transform:scaleX(-1);
+	-moz-transform:scaleX(-1);
+	-ms-transform:scaleX(-1);
+	-o-transform:scaleX(-1);
+	transform:scaleX(-1);
+	
+}
+.develope-project > *{
+	-webkit-transform:scaleX(-1);
+	-moz-transform:scaleX(-1);
+	-ms-transform:scaleX(-1);
+	-o-transform:scaleX(-1);
+	transform:scaleX(-1);
+}
+.headline-3 p{
+	    padding-left: initial;
+    padding-right: 60%;
+    clear: both;
+}
+.headline-all > p {
+	clear: both;
+}
+.captions-box, .supporter-captions-box, .project-idea-caption{
+	text-align: left;
+}
+.support .btn-white {
+
+	    text-align: left;
+
+}
+
+.news-post-content > p {
+    width: 10%;
+    text-align: left;
+}
+/*.news-content{
+    direction: rtl;
+}*/
+
+
+.news-content .flat-logo:before{
+    top: 0px;
+    left: 100%;
+}
+.news-content .flat-logo:after{
+    top: 100%;
+    left: 0px;
+}
+.news-content .news-content-item-box-gray {
+	text-align: left;
+}
+.go-button {
+	float: left;
+	padding-right: 3%;
+}
+.think-share-inner1 .think-inner1-wrap .think01-content-header h3 .header-number {
+	padding-left: 0px;
+}
+.think-share-inner1 .think-inner1-wrap .think01-img-background .apper-div {
+    left: 6px; 
+}
+.describe-section .discribe-content p {
+	text-align: left;
+}
+.reports .reports-wrap .report-content p {
+	text-align: left;
+}
+@media (min-width: 768px){
+	.ContactUsForm .col-sm-6{
+		float: right;
+	}
+}
+@media (min-width: 992px){
+
+
+	.col-md-push-6 {
+	    left: initial;
+	    /*right: 50%;*/
+	}
+	.col-md-pull-6 {
+	    /*left: 50%;*/
+	    right: initial;
+	}
+}
+.connect-email-contain .connect-btn{
+	float: right;
+}
+
+.caption-1 {
+    font-size: 63px;
+}
+
+.service-outer-box{
+	transform: scaleX(-1);
+}
+.service-outer-box .service-inner-box-text{
+	transform: scaleX(-1);	
+}
+.service-outer-box:nth-of-type(even){
+	transform: scaleX(-1) rotate(-90deg);
+}
+.service-outer-box:nth-of-type(even) .service-inner-box-text{
+	transform: scaleX(-1) rotate(-90deg);
+}

@@ -1,0 +1,129 @@
+1539702732a:1:{s:8:"team.htm";a:11:{s:8:"fileName";s:8:"team.htm";s:7:"content";s:3107:"title = "contact us"
+url = "/contact"
+layout = "main"
+is_hidden = 0
+
+[viewBag]
+
+[contactForm]
+injectBootstrapAssets = 1
+==
+<div class="confirm-container">
+    <!--This will contain the confirmation when the email is successfully sent-->
+</div>
+<form class="ContactUsForm" role="form"
+      data-request="{{ contactForm }}::onMailSent"
+      data-request-update="'{{ contactForm }}::confirm': '.confirm-container'">
+
+    <div class="form-groups">
+        <div class="form-group">
+            <input type="text" class="form-control" value=""  name="name" placeholder="{{name_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="email" placeholder="{{email_input}}">
+        </div>
+          <div class="form-group">
+            <input type="text" class="form-control" value="" name="phone" placeholder="{{phone_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="projectname" placeholder="{{projectname_input}}">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" value="" name="projectdescription" placeholder="{{projectdescription_input}}"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="website" placeholder="{{website_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="location" placeholder="{{location_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="projectsector" placeholder="{{projectsector_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="done" placeholder="{{done_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="development" placeholder="{{development_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="support" placeholder="{{support_input}}">
+        </div>
+        <div class="form-group">
+        <textarea class="form-control" value="" name="team" placeholder="{{team_input}}"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="hear" placeholder="{{hear_input}}">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" value="" name="body" placeholder="{{message_input}}" cols="30" rows="10"></textarea>
+        </div>
+        {% if contactForm.enableCaptcha %}
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="{{ contactForm.siteKey }}"></div>
+            </div>
+        {% endif %}
+        <button type="submit" class="btn btn-primary btn-lg pull-right">{{send_button}}</button>
+    </div>
+</form>
+{% framework %}
+{% framework extras %}";s:5:"mtime";i:1538642511;s:6:"markup";s:2984:"<div class="confirm-container">
+    <!--This will contain the confirmation when the email is successfully sent-->
+</div>
+<form class="ContactUsForm" role="form"
+      data-request="{{ contactForm }}::onMailSent"
+      data-request-update="'{{ contactForm }}::confirm': '.confirm-container'">
+
+    <div class="form-groups">
+        <div class="form-group">
+            <input type="text" class="form-control" value=""  name="name" placeholder="{{name_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="email" placeholder="{{email_input}}">
+        </div>
+          <div class="form-group">
+            <input type="text" class="form-control" value="" name="phone" placeholder="{{phone_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="projectname" placeholder="{{projectname_input}}">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" value="" name="projectdescription" placeholder="{{projectdescription_input}}"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="website" placeholder="{{website_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="location" placeholder="{{location_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="projectsector" placeholder="{{projectsector_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="done" placeholder="{{done_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="development" placeholder="{{development_input}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="support" placeholder="{{support_input}}">
+        </div>
+        <div class="form-group">
+        <textarea class="form-control" value="" name="team" placeholder="{{team_input}}"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" value="" name="hear" placeholder="{{hear_input}}">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" value="" name="body" placeholder="{{message_input}}" cols="30" rows="10"></textarea>
+        </div>
+        {% if contactForm.enableCaptcha %}
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="{{ contactForm.siteKey }}"></div>
+            </div>
+        {% endif %}
+        <button type="submit" class="btn btn-primary btn-lg pull-right">{{send_button}}</button>
+    </div>
+</form>
+{% framework %}
+{% framework extras %}";s:4:"code";N;s:5:"title";s:10:"contact us";s:3:"url";s:8:"/contact";s:6:"layout";s:4:"main";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:0:{}s:11:"contactForm";a:1:{s:21:"injectBootstrapAssets";s:1:"1";}}}

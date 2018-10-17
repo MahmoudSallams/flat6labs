@@ -1,0 +1,476 @@
+title = "home"
+url = "/"
+layout = "main"
+is_hidden = 0
+
+[newsPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+postFeatured = 1
+postPage = "singleNews"
+categoryPage = "singleNews"
+
+[newsPosts newsPosts2]
+pageNumber = 1
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+postFeatured = 2
+postPage = "singleNews"
+categoryPage = "singleNews"
+
+[localePicker]
+forceUrl = 1
+
+[staticMenu]
+code = "main-menu-en"
+
+[ProjectList]
+
+[StagesList]
+==
+<header class='overlay home-header'>
+    <div class="container">
+        <div class="header-nav-items">
+            <div class="header-nav-items-logo">
+                <img src="{{'assets/images/logo.png'|theme }}" />
+            </div>
+            <div class="header-nav-items-nav">
+                {% if staticMenu.menuItems %}
+                    {% for item in staticMenu.menuItems %}
+                        <a href="{{item.url}}" class="{{item.isActive ? 'active':''}}" ><span>{{item.title | _}}</span></a>    
+                    {% endfor %}
+                {% endif %}
+                {% if activeLocale  == 'ar' %}
+                    <a href="#" data-request="onSwitchLocale" class='lang-btn' data-request-data="locale: 'en'">English</a>
+                {% else %}
+                    <a href="#" data-request="onSwitchLocale" class="lang-btn" data-request-data="locale: 'ar'">عربى</a>
+                {% endif %}    
+            </div>
+            <div class="header-nav-items-icon">
+                <a href="#" ><img src="{{'assets/images/nav-page-img.png'|theme }}" /></a>
+            </div>
+            <div onclick="$('.header-nav-items-nav').slideToggle();" class="header-nav-items-button">
+                <a href="#" ><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" >
+            <div class = "col-xs-12 col-md-2 logo-home-contain">
+                <img src = "{{ 'assets/images/nav-page-img-1.png ' |theme }}" class="img-responsive logo-home-2">
+                <div class="captions-box">
+                    <!-- <span class="active captions logo-home-captions">
+                    {{" الدورة الاولى" | _}}
+                    </span> --><!-- logo-home-contain -->
+                </div><!-- captions-box -->
+                <div class="captions-box">
+                    <!--  <span class="captions logo-home-captions">
+                                        {{"من برنامج مصر تبدأ " | _}}      
+                                        </span> --><!-- logo-home-contain -->
+                </div><!-- captions-box -->
+            </div><!-- logo-home-contain -->
+            <div class="col-md-8">
+                <div class="captions-box">
+                    <div>
+                        <span class="captions caption-1">
+                          {{"فّكر..طّور..انطلق" | _}}    
+                        </span><!-- caption-1 -->
+                    </div>
+                    <div class="captions-box-child">
+                        <div>
+                            <span class="captions caption-2">
+                            {{"فّكر..طّور..انطلقdescription " | _}}
+                            </span><!-- caption-2 -->
+                        </div>
+                        <div>
+                            <span class="captions caption-2">
+                            {{"فّكر..طّور..انطلقdescrip222tion " | _}}
+                            
+                            </span><!-- caption-2 -->
+                        </div>
+                        <div>
+                            <button class="form-control go-button">
+                              <a style="
+    color: #b40017;
+" href="http://34.251.139.234/flat6labs/apply-program">  <span>
+                                  
+                                  {{"تقدم الأن" | _}}
+                                  <i class="fas fa-angle-left"></i>
+                                </span></a>
+                            </button>
+                        </div>
+                    </div><!-- captions-box-child -->
+                </div><!-- captions-box -->
+            </div>
+        </div><!-- container-->
+    </div><!-- overlay -->        
+</header><!-- Header -->
+
+<section class="supporters" id="supporter" >
+
+    <div class="container">
+        <div class="row">
+             <div class="supporter-captions-box supporter-box-1 col-sm-6">
+                 <span class="captions supporter-caption">
+                  {{"الداعمون لمبادرة مصر تبدأ" | _}}   
+                 </span><!-- supporter-caption -->
+             </div><!-- supporter-captions-box -->
+         </div>
+     </div>
+     <div class="container">
+         <div class="row">
+             <div class="supporter-captions-box supporter-box-2 col-sm-6">
+                 <span class="captions supporter-caption">
+                   {{"الداعمون لمبادرة مصر تبدأ description  " | _}}   
+                 </span><!-- supporter-caption -->
+             </div><!-- supporter-captions-box -->
+        </div>  
+    </div>
+    <div class="container">
+        <div class="sponsors row">
+            <div class="supporter-sponsor col-sm-2 col-xs-12">
+                <div>
+                    <span>{{"تحت إدارة" | _}}</span>
+                </div>
+                <div>
+                    <img src = "{{ 'assets/images/flat-6-logo.png' |theme }}" class="img-responsive">
+                </div>
+            </div>
+            <div class="supporter-sponsor col-sm-2 col-xs-12">
+                <div>
+                    <span>{{"بدعم من" | _}}</span>
+                </div>
+                <div>
+                    <img src = "{{ 'assets/images/arabnet-logo.png ' |theme }}" class="img-responsive">
+                </div>
+            </div>
+            <div class="supporter-sponsor col-sm-2 col-xs-12">
+                <div class="special-sponsor-class">
+                    <span>{{"بتمويل من" | _}}</span>
+                </div>
+                <div>
+                    <img src = "{{ 'assets/images/lsf-logo.png ' |theme }}" class="img-responsive lsf-logo">
+                </div>
+            </div>
+        </div>
+    </div><!-- sponsors -->
+</section><!-- supporters -->
+{% set projects = ProjectList.projects %}
+<section id="project-list">
+    <div class='container'>
+        <div class="project-list-title">
+            <h3>
+                 {{" عندك فكرة مشروع؟ " | _}}     
+                <span>
+                    {{"انضم لمبادرة مصر تبدأ" | _}}    
+                </span>
+            </h3>
+<!--             <img src = "{{ 'assets/images/idea-img.png ' |theme }}" class="img-responsive">
+ -->        </div>
+        <div class="project-list-items">
+            {% for key,project in projects %}
+                <div class="project-list-item" style="background-image: url('{{ project.avatar.path }}')">
+                    <div class="project-list-item-box">
+                        <span class="project-number">0{{key + 1}}</span>
+                        <div class="project-list-item-box-red">
+                            <span class="flat-logo-white"></span>
+                            <h4>{{project.title}}</h4>
+                            <div class="project-list-item-box-red-content">
+                                {{ str_limit(project.description, 100) }}
+                            </div>
+                            <a href="{{"pr" | page({'id':project.id})}}">
+                                {{"  إعرف المزيد " | _}} 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="project-list-arrow-box arrow-box">
+            <div id='project-list-news-arrow-prev' class="arrow-button arrow-btn-box"><i class="fas fa-angle-left"></i></div>
+            <div id='project-list-news-arrow-next' class="arrow-button arrow-btn-box"><i class="fas fa-angle-right"></i></div>
+        </div>
+    </div>
+</section>
+<section class="project-idea hidden">
+    <div class="row project-idea-details">
+        <div class="project-idea-caption col-sm-8 col-xs-12">
+            <span>
+          {{" عندك فكرة مشروع؟ " | _}}     
+            </span>
+
+            <span>
+             {{"انضم لمبادرة مصر تبدأ" | _}}    
+            </span>
+        </div><!-- project-img -->
+        <div class="project-img col-sm-4 col-xs-12">
+            <img src = "{{ 'assets/images/idea-img.png ' |theme }}" class="img-responsive">
+        </div><!-- project-idea-caption -->
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2  rules">
+                <img src="{{ 'assets/images/rule-1.png ' |theme }}" class="img-responsive">
+                <div class="clearfix"></div>
+                <div class="rules-caption-box">
+                    <span class="rules-caption">{{"فّكر وشارك في أنشطتنا" | _}} </span>
+                </div>
+            </div>
+            <div class="col-sm-6 rules col-sm-pull-1">
+                <img src = "{{ 'assets/images/vector-idea.png ' |theme }}" class="img-responsive vector-idea">
+                <img src = "{{ 'assets/images/rule-2.png ' |theme }}" class="img-responsive vector-idea rule-2">
+                <div class="develope-notes">
+                    <h3>
+             {{"طّور مشروعك في الحاضنة " | _}}            
+                    </h3>
+
+                    <p>
+                  {{"طّور مشروعك في الحاضنة descripion " | _}}
+                         الاجتماعي 
+                    </p>
+                    <span>
+                   {{"إعرف المزيد " | _}}     
+                    </span>
+                </div>
+              <!--  <img src = "{{ 'assets/images/box-info.png' |theme }}" class="img-responsive vector-idea">-->
+            </div>
+            <div class="col-sm-2 col-sm-pull-2 rules">
+                <img src="{{ 'assets/images/rule-3.png' |theme }}" class="img-responsive">
+                <div class="clearfix"></div>
+                <div class="rules-caption-box">
+                    <span class="rules-caption">{{"انطلق بشركتك في المسرعة" | _}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow-box">
+        <div class="arrow-button arrow-btn-box"><i class="fas fa-angle-left"></i></div>
+        <div class="arrow-button arrow-btn-box"><i class="fas fa-angle-right"></i></div>
+    </div>
+</section>
+
+<div class="steps" id="stagesoftheprogram">
+    <div class="container">
+    <div class="project-idea-details" style="margin-bottom: 0px;position: relative;
+    padding: 0px;">
+        <div class="project-idea-caption">
+            <span>
+          {{" مراحل برنامج احتضان مصر تبدأ " | _}}     
+            </span>
+
+            <span>
+             {{"من فكرة إلى شركة" | _}}    
+            </span>
+        </div><!-- project-img -->
+        <div style="clear:both;"></div>
+    </div>
+    
+        <div class="service-list-items">
+        {% set stages = StagesList.stages %}
+        	<!-- Loop On this -->
+        	{% for stage in stages %}
+            	<div class="service-outer-box">
+            		<div class="service-arrow"></div>
+            		<div class="service-inner-box">
+            			<div class="service-inner-box-text">{{stage.title}}</div>	
+            		</div>
+            	</div>
+        	{% endfor %}
+        </div>
+        <div class="service-descriptions">
+        	<!-- Loop On this -->
+        	{% for stage in stages %}
+        	    <p>{{stage.description}}</p>
+        	{% endfor %}
+        </div>
+    </div>
+</div>
+<div class="intro-group">
+    <div class="container">
+        <div class="row">
+            {% set posts = newsPosts.posts %}
+            {% for post in posts %}
+                <div class="col-sm-12">
+                    <h2 class="h2 text-right">
+                        {{ post.title }}                
+                    </h2>
+                </div>
+                <div class="clearfix"></div>
+                {% if post.image %}
+                    <div class="col-sm-6 col-xs-12 intro-img">
+                        <img class="img-responsive" src="{{ post.image|media }}" alt="intro-group">
+                    </div>
+                {% endif %}
+                <div class="col-sm-6 col-xs-12 text-right intro-paragraph">
+                    <span >
+                        {{ post.published_at|date('Y-m-d') }}
+                    </span>
+                    <p class="lead">
+                         {% if post.introductory %}
+                                        {{ post.introductory |slice(0,250) | raw  }}
+                                    {% elseif post.content %}
+                                        {{ post.content |slice(0,250) | raw }}
+                                    {% endif %}
+                    </p>
+                    <a href="{{postPage| page({"slug":post.slug})}}"> 
+                        {{ post.title }}>>
+                    </a>
+                </div>
+            {% else %}
+                {{ noPostsMessage }}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- support and help -->
+<div class="support red-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-xs-12 text-right ">
+                <h3 class="h3">{{"تحتاج لدعم؟ " | _}}</h3>
+                <p>{{"تحتاج لدعم؟ description" | _}}</p>
+                <button class="btn btn-lg btn-white">
+                    <a href="https://www.flat6labs.com/?lang=ar"><i class="fas fa-angle-left"></i>{{"تواصل معنا" | _}}</a>
+                </button>
+                <button class="btn btn-lg btn-white">
+                    <a href="https://www.flat6labs.com/?lang=ar"><i class="fas fa-angle-left"></i>  {{"معلومات أكثر هنا" | _}} </a>
+                </button>
+            </div>
+            <div class="col-sm-5 col-xs-12 text-right border-right">
+                <h3 class="h2">{{"تقدم للمسرعة " | _}}</h3>
+                <p>{{"تقدم للمسرعة description " | _}}</p>
+                <button class="btn btn-lg btn-white">
+                    <a href="https://www.flat6labs.com/?lang=ar"><i class="fas fa-angle-left"></i>{{"انطلق بشركتك  " | _}}  </a>
+                </button>
+                <button class="btn btn-lg btn-white">
+                    <a href="https://www.flat6labs.com/?lang=ar"><i class="fas fa-angle-left"></i>{{"تقدم من هنا" | _}} </a>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+   <!-- latest news -->
+<div class=" latest-news">
+    <div class="container">
+        <h2 class="h2 text-right">
+            {{" آخر الآخبار " | _}}     
+        </h2>
+        <div class="news-content">
+            <div class="news-content-items">
+                {% set posts = newsPosts2.posts %}
+                {% for post in posts %}
+                    <div class="news-content-item" style="background-image: url('{{ post.image | media }}')">
+                        <div class="news-content-item-box">
+                            <span> {{ post.published_at|date('Y-m-d') }}</span>
+                            <div class="news-content-item-box-gray">
+                                <span class="flat-logo"></span>
+                                <div class="news-content-item-box-gray-content">
+                                    {% if post.introductory %}
+                                        {{ post.introductory  | raw  }}
+                                    {% elseif post.content %}
+                                        {{ post.content | raw }}
+                                    {% endif %}
+                                </div>
+                                <a href="{{postPage| page({"slug":post.slug})}}">
+                                    {{"  إعرف المزيد " | _}} 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="arrow-box">
+                <div id='news-arrow-prev' class="arrow-button arrow-btn-box"><i class="fas fa-angle-left"></i></div>
+                <div id='news-arrow-next' class="arrow-button arrow-btn-box"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        
+        $('.news-content-items').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            appendArrows: $('.news-content .arrow-box'),
+            prevArrow:$('#news-arrow-prev'),
+            nextArrow:$('#news-arrow-next'),
+            {% if activeLocale  == 'ar' %}
+                rtl: true,
+            {% endif %}
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+            ]
+        });
+        
+        $.fn.worcboxFocus = function(options){
+            $(this).each(function (){
+                $element = $(this);
+                var current = 0;
+                var count = $(this).children().length;
+                console.log(count);
+                $element.children(':eq('+ current +')').addClass('current-focus');
+                options.prevArrow.click(function(){
+                    console.log('here');
+                    current++;
+                    if(current >= count){
+                        current = 0;
+                    }
+                    $element.children().removeClass('current-focus');
+                    $element.children(':eq('+ current +')').addClass('current-focus');
+                })
+                options.nextArrow.click(function(){
+                    console.log('here');
+                    current--;
+                    if(current < 0){
+                        current = count - 1;
+                    }
+                    $element.children().removeClass('current-focus');
+                    $element.children(':eq('+ current +')').addClass('current-focus');
+                })
+            })
+        };
+        $('.project-list-items').worcboxFocus({
+            prevArrow: $('#project-list-news-arrow-prev'),
+            nextArrow: $('#project-list-news-arrow-next'),
+        });
+    });
+    $(".service-outer-box").click(function(){
+        $(".service-outer-box").removeClass('active');
+        $(this).addClass('active');
+        $(".service-descriptions").children('p').removeClass('active');
+        $(".service-descriptions").children('p:eq('+ $(this).index() +')').addClass('active')
+        if(!first){
+            $("html, body").animate({
+            'scrollTop': $(".service-descriptions").offset().top - ( $(window).height() -  $(".service-descriptions").outerHeight())
+            })
+        }
+        first = false;
+        
+    });
+    var first = true;
+    $(".service-outer-box:eq(0)").click()
+
+</script>
