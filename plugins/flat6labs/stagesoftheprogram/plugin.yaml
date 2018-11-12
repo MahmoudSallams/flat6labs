@@ -9,4 +9,4 @@ navigation:
         label: 'Stages of Theprogram'
         url: flat6labs/stagesoftheprogram/stages
         icon: icon-life-ring
-        order: ''
+        order: '90'

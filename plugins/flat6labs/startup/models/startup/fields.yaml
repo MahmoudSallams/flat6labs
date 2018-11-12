@@ -1,0 +1,31 @@
+fields:
+    name:
+        label: 'StartUp Name'
+        span: auto
+        type: text
+    industry:
+        label: Industry
+        span: auto
+        type: text
+    status:
+        label: Status
+        span: auto
+        type: text
+    member_numbers:
+        label: 'Members Number'
+        span: auto
+        type: number
+    descripion:
+        label: Descripion
+        size: ''
+        span: auto
+        type: textarea
+    avatar:
+        label: 'File upload'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

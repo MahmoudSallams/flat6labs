@@ -1,4 +1,4 @@
-1539702732a:1:{s:14:"singleNews.htm";a:10:{s:8:"fileName";s:14:"singleNews.htm";s:7:"content";s:839:"title = "singleNews"
+1542026798a:1:{s:14:"singleNews.htm";a:10:{s:8:"fileName";s:14:"singleNews.htm";s:7:"content";s:839:"title = "singleNews"
 url = "/singlenews/:slug"
 layout = "inner"
 is_hidden = 0
@@ -23,7 +23,7 @@ slug = "{{ :slug }}"
 
         </div>
     </div>
-</div";s:5:"mtime";i:1539098369;s:6:"markup";s:725:"{% set post = newsPost.post %}
+</div";s:5:"mtime";i:1541492140;s:6:"markup";s:725:"{% set post = newsPost.post %}
 <div class="container">
     <div class="post">
         <div class="post-content">

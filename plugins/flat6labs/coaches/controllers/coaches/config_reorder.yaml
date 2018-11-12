@@ -1,0 +1,4 @@
+title: Coaches
+modelClass: Flat6labs\Coaches\Models\Coache
+toolbar:
+    buttons: reorder_toolbar

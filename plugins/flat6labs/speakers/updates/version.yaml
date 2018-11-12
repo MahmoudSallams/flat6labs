@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table flat6labs_speakers_speaker'
+    - builder_table_create_flat6labs_speakers_speaker.php
+1.0.3:
+    - 'Updated table flat6labs_speakers_speaker'
+    - builder_table_update_flat6labs_speakers_speaker.php
+1.0.4:
+    - 'Updated table flat6labs_speakers_speaker'
+    - builder_table_update_flat6labs_speakers_speaker_2.php

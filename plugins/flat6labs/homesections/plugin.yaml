@@ -1,0 +1,20 @@
+plugin:
+    name: 'flat6labs.homesections::lang.plugin.name'
+    description: 'flat6labs.homesections::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Menu Item'
+        icon: icon-life-ring
+        url: /
+        sideMenu:
+            side-menu-item:
+                label: 'Menu Item'
+                icon: icon-sitemap
+                url: /
+            side-menu-item2:
+                label: 'Menu Item'
+                icon: icon-sitemap
+                url: /

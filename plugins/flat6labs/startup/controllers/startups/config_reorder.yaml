@@ -1,0 +1,4 @@
+title: Startups
+modelClass: Flat6labs\Startup\Models\Startup
+toolbar:
+    buttons: reorder_toolbar

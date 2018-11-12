@@ -1,0 +1,24 @@
+
+{% set coaches = CoachesList.coaches %}
+<div class="bg-gray">
+    <div class="container">
+        <div class="row">
+                {% for coaches in coaches %}
+                                <div class=" col-12 col-md-3">
+
+                    <div class="card" >
+                      <img style="border-radius:100%;" class="card-img-top" src="{{coaches.avatar.path}}" alt="{{coaches.name}}">
+                      <div class="card-body">
+                        <h5 class="card-title align-center">{{coaches.name}}</h5>
+                        <p class="card-text">{{ str_limit(coaches.description, 100) }}</p>
+                        <a href="{{"pr"| page({'id':coaches.id})}}" class="">{{'More Info' | _}}</a>
+                      </div>
+                    </div>
+                    </div>
+                {% else %}
+                    
+                {% endfor %}
+            </>
+        </div>
+    </div>
+</div>

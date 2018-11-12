@@ -1,0 +1,10 @@
+name: Trainers
+form: $/flat6labs/trainer/models/trainer/fields.yaml
+modelClass: Flat6labs\Trainer\Models\Trainer
+defaultRedirect: flat6labs/trainer/trainers
+create:
+    redirect: 'flat6labs/trainer/trainers/update/:id'
+    redirectClose: flat6labs/trainer/trainers
+update:
+    redirect: flat6labs/trainer/trainers
+    redirectClose: flat6labs/trainer/trainers

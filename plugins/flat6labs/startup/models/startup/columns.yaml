@@ -1,0 +1,8 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: false
+    name:
+        label: name
+        type: text

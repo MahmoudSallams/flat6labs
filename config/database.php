@@ -58,7 +58,7 @@ return [
             'port'      => '3306',
             'database'  => 'flat6labs',
             'username'  => 'root',
-            'password'  => 'root_p@ssword',
+            'password'  => 'root',
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',

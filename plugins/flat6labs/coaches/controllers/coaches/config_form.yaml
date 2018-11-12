@@ -1,0 +1,10 @@
+name: Coaches
+form: $/flat6labs/coaches/models/coache/fields.yaml
+modelClass: Flat6labs\Coaches\Models\Coache
+defaultRedirect: flat6labs/coaches/coaches
+create:
+    redirect: 'flat6labs/coaches/coaches/update/:id'
+    redirectClose: flat6labs/coaches/coaches
+update:
+    redirect: flat6labs/coaches/coaches
+    redirectClose: flat6labs/coaches/coaches

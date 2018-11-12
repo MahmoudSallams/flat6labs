@@ -1,0 +1,10 @@
+name: Startups
+form: $/flat6labs/startup/models/startup/fields.yaml
+modelClass: Flat6labs\Startup\Models\Startup
+defaultRedirect: flat6labs/startup/startups
+create:
+    redirect: 'flat6labs/startup/startups/update/:id'
+    redirectClose: flat6labs/startup/startups
+update:
+    redirect: flat6labs/startup/startups
+    redirectClose: flat6labs/startup/startups

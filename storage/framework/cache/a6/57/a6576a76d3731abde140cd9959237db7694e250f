@@ -1,4 +1,4 @@
-1539702752a:1:{s:9:"inner.htm";a:7:{s:8:"fileName";s:9:"inner.htm";s:7:"content";s:1959:"[localePicker]
+1542026798a:1:{s:9:"inner.htm";a:7:{s:8:"fileName";s:9:"inner.htm";s:7:"content";s:1959:"[localePicker]
 forceUrl = 1
 
 [newsSubscribe]
@@ -51,7 +51,7 @@ forceUrl = 1
 {% scripts %}
 
 </body>
-</html>";s:5:"mtime";i:1539526206;s:6:"markup";s:1911:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1541492140;s:6:"markup";s:1911:"<!DOCTYPE html>
 <html {% if activeLocale=="ar" %} dir="rtl" {% endif %}  lang="ar" class="no-js">
 
 <head>

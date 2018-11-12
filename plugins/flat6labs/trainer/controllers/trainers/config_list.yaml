@@ -1,0 +1,12 @@
+list: $/flat6labs/trainer/models/trainer/columns.yaml
+modelClass: Flat6labs\Trainer\Models\Trainer
+title: Trainers
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'flat6labs/trainer/trainers/update/:id'

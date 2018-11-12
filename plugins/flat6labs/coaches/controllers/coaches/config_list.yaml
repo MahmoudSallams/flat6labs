@@ -1,0 +1,12 @@
+list: $/flat6labs/coaches/models/coache/columns.yaml
+modelClass: Flat6labs\Coaches\Models\Coache
+title: Coaches
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'flat6labs/coaches/coaches/update/:id'

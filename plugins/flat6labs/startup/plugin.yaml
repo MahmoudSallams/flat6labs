@@ -1,0 +1,11 @@
+plugin:
+    name: 'flat6labs.startup::lang.plugin.name'
+    description: 'flat6labs.startup::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-startup:
+        label: 'Start Up'
+        url: flat6labs/startup/startups
+        icon: icon-adn

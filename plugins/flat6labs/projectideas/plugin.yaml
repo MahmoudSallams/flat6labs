@@ -9,4 +9,4 @@ navigation:
         label: 'Project Ideas'
         url: flat6labs/projectideas/projects
         icon: icon-adjust
-        order: ''
+        order: '99'

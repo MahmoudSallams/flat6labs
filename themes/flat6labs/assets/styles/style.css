@@ -1860,4 +1860,19 @@ element.style {
             transform: rotate(180deg);
         }
     }
-
+.bg-gray{
+    background: #EEE;
+}   
+.card{
+    margin: 15px 0px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px 15px;
+    border: 2px solid white;
+}
+.card:hover{
+    border: 2px solid #b40016;
+}
+.card img{
+    width: 100%
+}

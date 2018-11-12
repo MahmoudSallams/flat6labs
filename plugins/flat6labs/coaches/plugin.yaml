@@ -1,0 +1,11 @@
+plugin:
+    name: 'flat6labs.coaches::lang.plugin.name'
+    description: 'flat6labs.coaches::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-coache:
+        label: Coaches
+        url: flat6labs/coaches/coaches
+        icon: icon-life-ring

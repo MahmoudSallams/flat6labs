@@ -1,0 +1,11 @@
+name: Speakers
+modelClass: Flat6labs\Speakers\Models\Speaker
+form: $/flat6labs/speakers/models/speaker/fields.yaml
+defaultRedirect: flat6labs/speakers/speakers
+create:
+    redirect: 'flat6labs/speakers/speakers/update/:id'
+    redirectClose: flat6labs/speakers/speakers
+update:
+    redirect: flat6labs/speakers/speakers
+    redirectClose: flat6labs/speakers/speakers
+preview: {  }

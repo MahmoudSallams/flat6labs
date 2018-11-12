@@ -1,0 +1,11 @@
+plugin:
+    name: 'flat6labs.trainer::lang.plugin.name'
+    description: 'flat6labs.trainer::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-trainer:
+        label: Trainers
+        url: flat6labs/trainer/trainers
+        icon: icon-life-ring

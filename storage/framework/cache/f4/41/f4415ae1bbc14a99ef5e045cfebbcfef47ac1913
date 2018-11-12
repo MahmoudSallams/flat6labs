@@ -1,0 +1,55 @@
+1542026798a:1:{s:11:"startup.htm";a:11:{s:8:"fileName";s:11:"startup.htm";s:7:"content";s:1041:"title = "startup"
+url = "/startup"
+layout = "inner"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/startup"
+
+[StartupList]
+==
+{% set startup = StartupList.startup %}
+<div class="bg-gray">
+    <div class="container">
+        <div class="row">
+            {% for startup in startup %}
+                <div class=" col-12 col-md-3">
+                <div class="card" >
+                  <img class="card-img-top" src="{{startup.avatar.path}}" alt="{{startup.name}}">
+                  <div class="card-body">
+                    <h5 class="card-title">{{startup.name}}</h5>
+                     <h4 class="card-title">Industry: {{startup.industry}}</h4>
+                    <p class="card-text">{{ str_limit(startup.descripion, 100) }}</p>
+                    <a href="{{"pr"| page({'id':startup.id})}}" class="">{{'More Info' | _}}</a>
+                  </div>
+                  
+                  </div>
+                </div>
+            {% else %}
+                
+            {% endfor %}
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1542019201;s:6:"markup";s:919:"{% set startup = StartupList.startup %}
+<div class="bg-gray">
+    <div class="container">
+        <div class="row">
+            {% for startup in startup %}
+                <div class=" col-12 col-md-3">
+                <div class="card" >
+                  <img class="card-img-top" src="{{startup.avatar.path}}" alt="{{startup.name}}">
+                  <div class="card-body">
+                    <h5 class="card-title">{{startup.name}}</h5>
+                     <h4 class="card-title">Industry: {{startup.industry}}</h4>
+                    <p class="card-text">{{ str_limit(startup.descripion, 100) }}</p>
+                    <a href="{{"pr"| page({'id':startup.id})}}" class="">{{'More Info' | _}}</a>
+                  </div>
+                  
+                  </div>
+                </div>
+            {% else %}
+                
+            {% endfor %}
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:7:"startup";s:3:"url";s:8:"/startup";s:6:"layout";s:5:"inner";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:9:"localeUrl";a:1:{s:2:"en";s:8:"/startup";}}s:11:"StartupList";a:0:{}}}

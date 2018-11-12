@@ -1,0 +1,4 @@
+title: Trainers
+modelClass: Flat6labs\Trainer\Models\Trainer
+toolbar:
+    buttons: reorder_toolbar

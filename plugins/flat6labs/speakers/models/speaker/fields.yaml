@@ -1,0 +1,39 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    description:
+        label: BIO
+        size: ''
+        span: auto
+        type: textarea
+    nationality:
+        label: Nationality
+        span: auto
+        type: text
+    gender:
+        label: Gender
+        span: auto
+        type: text
+    mobile:
+        label: Mobile
+        span: auto
+        type: text
+    mail:
+        label: E-mail
+        span: auto
+        type: text
+    website:
+        label: Website/Linkedn
+        span: auto
+        type: text
+    avatar:
+        label: 'File upload'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

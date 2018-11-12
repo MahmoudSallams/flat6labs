@@ -1,4 +1,4 @@
-1539702732a:1:{s:10:"Footer.htm";a:7:{s:8:"fileName";s:10:"Footer.htm";s:7:"content";s:2701:"[viewBag]
+1542026798a:1:{s:10:"Footer.htm";a:7:{s:8:"fileName";s:10:"Footer.htm";s:7:"content";s:2701:"[viewBag]
 snippetCode = "footer"
 snippetName = "footer"
 
@@ -54,7 +54,7 @@ snippetName = "footer"
 
             </div>
         </div>
-</footer>";s:5:"mtime";i:1539526375;s:6:"markup";s:2625:"<div class="news-subscription">
+</footer>";s:5:"mtime";i:1541492140;s:6:"markup";s:2625:"<div class="news-subscription">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-right">

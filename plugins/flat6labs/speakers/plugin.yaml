@@ -1,0 +1,11 @@
+plugin:
+    name: 'flat6labs.speakers::lang.plugin.name'
+    description: 'flat6labs.speakers::lang.plugin.description'
+    author: flat6labs
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-speaker:
+        label: Speakers
+        url: flat6labs/speakers/speakers
+        icon: icon-life-ring

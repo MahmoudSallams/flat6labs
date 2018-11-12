@@ -1,0 +1,23 @@
+
+{% set speakers = SpeakersList.speakers %}
+<div class="bg-gray">
+    <div class="container">
+        <div class="row">
+                {% for speakers in speakers %}
+                                <div class=" col-12 col-md-3">
+
+                    <div class="card" >
+                      <img style="border-radius:100%;" class="card-img-top" src="{{speakers.avatar.path}}" alt="{{speakers.name}}">
+                      <div class="card-body">
+                        <h5 class="card-title align-center">{{speakers.name}}</h5>
+                        <p class="card-text">{{ str_limit(speakers.description, 100) }}</p>
+                        <a href="{{"pr"| page({'id':speakers.id})}}" class="">{{'More Info' | _}}</a>
+                      </div>
+                    </div>
+                    </div>
+                {% else %}
+                    
+                {% endfor %}
+        </div>
+    </div>
+</div>
